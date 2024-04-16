@@ -1,0 +1,92 @@
+[{
+  "_id": {
+    "$oid": "65f812af063d4a9539c61e54"
+  },
+  "emailid": "thapaayush39@gmail.com",
+  "phine no.": "9737239729",
+  "username": "ayush",
+  "likes": 1
+},
+{
+  "_id": {
+    "$oid": "65f81389063d4a9539c61e55"
+  },
+  "firstname": "sachin",
+  "likes": 1,
+  "secondname": "Thapa"
+},
+{
+  "_id": {
+    "$oid": "65f95a2d1395cd696e63f1bf"
+  },
+  "title": "Post Title 2",
+  "body": "Body of post.",
+  "category": "Event",
+  "likes": 3,
+  "tags": [
+    "news",
+    "events"
+  ],
+  "date": "Tue Mar 19 2024 14:56:05 GMT+0530 (India Standard Time)"
+},
+{
+  "_id": {
+    "$oid": "65f95a2d1395cd696e63f1c0"
+  },
+  "title": "Post Title 3",
+  "body": "Body of post.",
+  "category": "Technology",
+  "likes": 4,
+  "tags": [
+    "news",
+    "events"
+  ],
+  "date": "Tue Mar 19 2024 14:56:05 GMT+0530 (India Standard Time)"
+},
+{
+  "_id": {
+    "$oid": "65f95a2d1395cd696e63f1c1"
+  },
+  "title": "Post Title 4",
+  "body": "Body of post.",
+  "category": "Event",
+  "likes": 5,
+  "tags": [
+    "news",
+    "events"
+  ],
+  "date": "Tue Mar 19 2024 14:56:05 GMT+0530 (India Standard Time)"
+},
+{
+  "_id": {
+    "$oid": "65faaf70fbd5d3e678059a6d"
+  },
+  "item": "nuts",
+  "quantity": 30,
+  "carrier": {
+    "name": "Shipit",
+    "fee": 3
+  }
+},
+{
+  "_id": {
+    "$oid": "65faaf70fbd5d3e678059a6e"
+  },
+  "item": "bolts",
+  "quantity": 50,
+  "carrier": {
+    "name": "Shipit",
+    "fee": 4
+  }
+},
+{
+  "_id": {
+    "$oid": "65faaf70fbd5d3e678059a6f"
+  },
+  "item": "washers",
+  "quantity": 10,
+  "carrier": {
+    "name": "Shipit",
+    "fee": 1
+  }
+}]

@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding:0px ;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    }
+    
+     ul{
+                list-style: none;
+            
+            }
+    
+    
+    body{
+    
+    background-color: rgb(245,240,240)!important;
+    
+    }
+    
+    
+        
+        .nav-bar-top{
+            background-color: white;
+            width: 100%;
+            height: 100px;
+        }
+        
+        
+     
+        .span-text{
+        padding: 0px 6px;
+        }
+        
+       
+      
+        .heading-logo{
+        font-size: 38px;
+        font-weight: 700;
+        text-transform:uppercase;
+        margin-bottom:4px;
+        }
+        
+        .heading-logo span{
+        color:rgb(233, 144, 0, 1.0);
+        }
+        
+        .nav-item .nav-link{
+        color:rgb(0, 0, 0.685);
+        text-transform:uppercase;
+        font-weight:600 ;
+        font-size: 22px;
+        float: left;
+        margin-left:80px ;
+        }
+        
+        .nav-item .nav-link:hover{
+        color: rgba(255,102,0,0.911);
+        }
+        
+        
+       /* modal design */
+
+       .modal{
+        /* background-image: url(../images/background.jpg); */
+        background-repeat: no-repeat;
+        background-size: cover;
+         }
+.modal-header{
+    font-family: "Playfair Display", serif;
+  }
+  
+  .modal-dialog form{
+    padding: 10px;
+  }
+  
+  .modal-dialog form label,input{
+    display: block;
+    width: 100%;
+    color: black;
+  }
+  
+  .modal-dialog form label{
+    padding: 5px;
+  }
+  
+  .modal-dialog form input{
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ebb184;
+  }
+  
+  .modal-dialog form button{
+    background-color: #ebb184;
+    margin-top: 20px;
+    width: 30%;
+    /* margin-left: 50%; */
+  }
+  
+  .modal-dialog form button:hover{
+    background-color: #ebb184;
+    border-color: #ebb184;
+  }
+
+  .data{
+    background-color: aliceblue;
+  }
+

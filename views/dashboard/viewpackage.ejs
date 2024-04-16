@@ -1,0 +1,69 @@
+<div class="container-fluid"
+style="background-color:whitesmoke;">
+<div class="row">
+    <div class="row">
+
+<%- include('header.ejs')%>
+
+</div>
+</div>
+
+</div>
+
+<div class="container">
+    <div class="row mt-5">
+     <div class="col-3">
+        <%- include('leftmenu.ejs')%>
+
+     </div>
+     <div class="col-9">
+
+        
+        <% if(viewData.length> 0){ %>
+            <table class="table table-bordered" >
+                <thead>
+                    <tr>
+                        <td>dreamdestination </td>
+                        <td>traveldiscription</td>
+                        <td>  suggestion</td>
+                        <td>  File</td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <% for(var i=0; i< viewData.length; i++){ %>
+                        <tr>
+                            <td>
+                                <%= viewData[i].dream_destination %>
+                            </td>
+                            <td>
+                                <%= viewData[i].travel_description %>
+                            </td>
+                            <td>
+                                <%= viewData[i].price %>
+                            </td>
+                           
+                            <td><img src= "/<%= viewData[i].upload_file %>" height="50" width="50"></td>
+                            
+
+                            <td>
+                                <a href="/delete_register/<%= viewData[i].id %>" class="btn btn-primary"
+                                    role="button">Delete</a>
+
+                                    <a href="/update_register/<%= viewData[i].id %>" class="btn btn-primary"
+                                        role="button">Update</a>
+                            </td>
+
+                            
+                        
+                        </tr>
+                        <% } %>
+                </tbody>
+            </table>
+            <% } else { %> No Record Found
+                <%} %>
+    
+ </div>
+
+</div>
+</div>

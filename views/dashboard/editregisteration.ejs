@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./asserts/css/main.css">
+    <link rel="stylesheet" href="./asserts/css/signup.css">
+</head>
+
+<body>
+    <!-- include for header file-->
+    <div class="container-fluid"
+   style="background-color:whitesmoke;">
+   <div class="row">
+       <div class="row">
+
+   <%- include('header.ejs')%>
+
+   </div>
+   </div>
+   
+   </div>
+   
+
+
+   <div class="container mt-5">
+       <div class="row">
+           <div class="col-3">
+   <%- include('leftmenu.ejs')%>
+   </div>
+
+    <div class="container">
+        <div class="row justify-content-center p-5">
+            <form class="register" method="post">
+                <h3 class="text-center">Register Yourself</h3>
+                <label for="first_name">First Name: </label>
+                <input type="text" name="f_name" value=<%= viewData.first_name %> id="l_name" placeholder="last name" required>               
+
+                <label for="last_name">Last Name: </label>
+                <input type="text" name="l_name" value=<%= viewData.last_name %> "  id="l_name" placeholder="last name" required>
+
+                <label for="birth_date">Date Of Birth</label>
+                <input type="date" name="dob" value=<%= viewData.dob %> "  id="date"  required>
+
+                <label for="email">Email</label>
+                <input type="text" name="email" value=<%= viewData.email %> "  id="email" placeholder="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" name="password" value=<%= viewData.password %> "  id="password"placeholder="password" required>
+
+                <label for="conform_password">Confirm Password</label>
+                <input type="password" name="confirm_password"  value=<%= viewData.confirm_password %> " id="conform_password"  placeholder="conform password"
+                    required>
+
+                <button class="btn btn-outline-primary" type="submit">Book Now</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

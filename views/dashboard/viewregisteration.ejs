@@ -1,0 +1,85 @@
+<div class="container-fluid"
+style="background-color:whitesmoke; ">
+<div class="row">
+    <div class="row">
+
+<%- include('header.ejs')%>
+
+</div>
+</div>
+
+</div
+
+<div class="container">
+    <div class="row mt-5">
+     <div class="col-3">
+        <%- include('leftmenu.ejs')%>
+
+     </div>
+     <div class="col-9">
+         <!-- <tr>
+                <td>first_name</td>
+                <td>last_name</td>
+                <td>dob</td>
+                <td>email</td>
+                <td>password</td>
+                <td>confirm_password</td>
+            </tr> -->
+
+            <% if(viewData.length> 0){ %>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <td>fist name</td>
+                            <td>last name</td>
+                            <td>date of birth</td>
+                            <td>email</td>
+                            <td>password</td>
+                            <td>confirm_password</td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <% for(var i=0; i< viewData.length; i++){ %>
+                            <tr>
+                                <td>
+                                    <%= viewData[i].first_name %>
+                                </td>
+                                <td>
+                                    <%= viewData[i].last_name %>
+                                </td>
+                                <td>
+                                    <% let date=new Date(viewData[i].dob);%>
+                                    <%= date.toDateString()%>
+
+
+                                    
+                                </td>
+                                <td>
+                                    <%= viewData[i].email %>
+                                </td>
+                                <td>
+                                    <%= viewData[i].password %>
+                                </td>
+                                <td>
+                                    <%= viewData[i].confirm_password%>
+                                </td>
+
+                                <td>
+                                    <a href="/delete/<%= viewData[i].id %>" class="btn btn-primary"
+                                        role="button">Delete</a>
+
+                                        <a href="/update/<%= viewData[i].id %>" class="btn btn-primary"
+                                            role="button">Update</a>
+                                </td>
+                            </tr>
+                            <% } %>
+                    </tbody>
+                </table>
+                <% } else { %> No Record Found
+                    <%} %>
+        
+     </div>
+
+    </div>
+    </div>

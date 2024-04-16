@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+form label,input{
+display: block;
+}
+   </style>
+</head>
+
+<body>
+   <div class="container-fluid"
+   style="background-color:whitesmoke;">
+   <div class="row">
+       <div class="row">
+
+   <%- include('header.ejs')%>
+
+   </div>
+   </div>
+   
+   </div>
+   
+
+
+   <div class="container mt-5">
+       <div class="row">
+           <div class="col-3">
+   <%- include('leftmenu.ejs')%>
+   </div>
+   
+   <div class="col-9 welcome-text">
+       <form class="addpackage" method="post" enctype="multipart/form-data" style="display: block; ">
+          
+           <label for="destination">Dream Destination </label>
+           <input type="text" name="dream_destination" value="<%= viewData.dream_destination %>" id="dream_destination" required>
+
+           <label for="discription">Travel Discription: </label>
+           <input type="text" name="travel_description"  value="<%= viewData.travel_description %>" id="travel_discription"  required>
+
+           <label for="suggestion">Package price:</label>
+           <input type="text" name="suggestion"  value="<%= viewData.suggestion %>" id="suggestion" required>`
+           
+           <label for="suggestion">Uploadfile:</label>
+           <input type="file" name="upload_file"  value="<%= viewData.upload_file %>" id="upload_file" required>`
+
+          
+           <button type="submit" class="btn btn-primary">Submit</button>
+         </form>
+   </div>
+   </div>
+   </div>
+
+
+   
+   </div>
+   </div>
+   </div>
+
+
+   
+   
+</body>
+</html>

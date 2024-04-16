@@ -1,0 +1,40 @@
+<div class="container-fluid main">
+    <div class="row">
+      
+      <%- include('./common/header.ejs')%>
+      
+    </div>
+   
+  </div>
+  
+  
+  <div class="container-fluid pb-5 " >
+    
+  
+      <h1 style="text-decoration:underline; margin-top:15px;"> Our Packages</h1>
+      <div class="row">
+        <% if(viewData.length > 0){ %>
+          <% for(var i=0; i<viewData.length; i++){%>
+      <div class="col-md-3 mt-5">
+      
+        <div class="card">
+          <img src="<%= viewData[i].upload_file %>" class="card-img-top"alt="">
+          <div class="card-body">
+            <h4 class="card-title animate__animated animate__rubberBand"><%= viewData[i].dream_destination %></h4>
+            <p class="card-text"> 
+              <%= viewData[i].travel_description %><br>
+              <%= viewData[i].price %><br>
+            
+             <a href="/package_details/<%=viewData[i].id %>"> <button class="Detils">Details  </button></a> 
+            
+            </p>
+          </div>                      
+        </div>
+        
+      </div>
+      <%} %>
+      <% } else { %>
+        No Record
+        <%} %>
+      </div>
+  </div>
